@@ -25,7 +25,7 @@ You can deploy your own version of Matomo with this button:
 
 [![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy?source=https://github.com/Scalingo/matomo)
 
-(Some ads blocker, like uBlock, may perturbate the process. If it cannot succeed at fist, try to desactivate the ads blocker temporary)
+Some ads blocker, like uBlock, may perturbate the process. If it cannot succeed at first, try to deactivate the ads blocker temporary.
 
 ### Configuration:
 
