@@ -3,7 +3,7 @@
 echo "Installing and activating Matomo purchased plugins"
 
 purchased_plugins=(
-  "Funnels:3.1.21"
+  "Funnels:3.1.22"
   "ActivityLog:3.4.0"
   "RollUpReporting:3.2.7"
   "MultiChannelConversionAttribution:3.0.7"
