@@ -40,6 +40,12 @@ As a real life example: `MATOMO_GENERAL_SALT=377efc193ca086` is replacing:
 salt=377efc193ca086
 ```
 
+### Purchased Plugins
+
+First, add the environment variable `MATOMO_PLUGINS_API_LICENSE_KEY` with your Matomo account license key. 
+
+Then, declare your purchased plugins in `bin/declare_purchased_plugins.sh`. They will be installed automatically during the deployment.
+
 ## Description
 
 Matomo is the leading Free/Libre open analytics platform.
