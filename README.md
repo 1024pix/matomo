@@ -11,7 +11,38 @@
 
 ## Note about this repository
 
-This repository is a fork maintained by `Scalingo` in order to ensure easy deployment on the hosting platform.
+This repository is a fork of the repository [scalingo/matomo](https://github.com/Scalingo/matomo) maintained by `Pix`, that is itself a fork of the official [matomo-org/matomo](https://github.com/matomo-org/matomo) repository.
+
+`1024pix/matomo` repository adds to `scalingo/matomo` repository the ability to manage **[purchased plugins](https://shop.matomo.org/my-account/downloads/)**.
+
+### Configuration
+
+First, add the environment variable `MATOMO_PLUGINS_API_LICENSE_KEY` with your Matomo account license key. 
+
+Then, declare your purchased plugins in `bin/install_purchased_plugins.sh`. They will be installed automatically during the deployment.
+
+```bash
+purchased_plugins=(
+  "Funnels:3.1.22"
+  "ActivityLog:3.4.0"
+  "RollUpReporting:3.2.7"
+  "MultiChannelConversionAttribution:3.0.7"
+)
+```
+
+### Matomo and plugins upgrade
+
+```
+Please, never use auto-upgrade button in the admin interface !!!
+```
+
+Instead, in order to upgrade the **Matomo instance**, synchronize this repository with the Scalingo original repository.
+
+To upgrade **purchased plugins**, edit the plugin release version in the `bin/install_purchased_plugins.sh` file.
+
+## Note about scalingo/matomo repository
+
+scalingo/matomo repository is a fork maintained by `Scalingo` in order to ensure easy deployment on the hosting platform.
 
 Three additional plugins have been added additionally to the standard distribution:
 
@@ -19,7 +50,7 @@ Three additional plugins have been added additionally to the standard distributi
 * DbCommands: Written by us to initialize the database with a console command: `database:create-tables`
 * AdminCommands: Written by us to create a super user or a site: `admin:create-superuser` or `admin:create-site`
 
-![Scalingo Matomo installed version : 3.14.0](https://img.shields.io/static/v1?label=Scalingo%20Matomo%20installed%20version&message=3.13.0&color=informational)
+![Scalingo Matomo installed version : 3.14.0](https://img.shields.io/static/v1?label=Scalingo%20Matomo%20installed%20version&message=3.14.0&color=informational)
 
 You can deploy your own version of Matomo with this button:
 
@@ -39,12 +70,6 @@ As a real life example: `MATOMO_GENERAL_SALT=377efc193ca086` is replacing:
 [General]
 salt=377efc193ca086
 ```
-
-### Purchased Plugins
-
-First, add the environment variable `MATOMO_PLUGINS_API_LICENSE_KEY` with your Matomo account license key. 
-
-Then, declare your purchased plugins in `bin/declare_purchased_plugins.sh`. They will be installed automatically during the deployment.
 
 ## Description
 
