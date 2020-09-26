@@ -1013,6 +1013,7 @@ Plugins[] = ProfessionalServices
 Plugins[] = UserId
 Plugins[] = CustomPiwikJs
 Plugins[] = Tour
+Plugins[] = TagManager
 
 Plugins[] = EnvironmentVariables
 Plugins[] = DbCommands
