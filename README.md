@@ -54,7 +54,7 @@ Three additional plugins have been added additionally to the standard distributi
 
 You can deploy your own version of Matomo with this button:
 
-[![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy?source=https://github.com/Scalingo/matomo)
+[![Deploy to Scalingo](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy?source=https://github.com/1024pix/pix-analytics)
 
 :warning: Some ads blocker, like uBlock, may perturbate the process. If it cannot succeed at first, try to deactivate the ads blocker temporary.
 
