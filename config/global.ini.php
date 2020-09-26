@@ -710,7 +710,7 @@ enable_general_settings_admin = 1
 enable_internet_features = 1
 
 ; By setting this option to 0, it will disable the "Auto update" feature
-enable_auto_update = 1
+enable_auto_update = 0
 
 ; By setting this option to 0, no emails will be sent in case of an available core.
 ; If set to 0 it also disables the "sent plugin update emails" feature in general and the related setting in the UI.
