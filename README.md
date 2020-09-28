@@ -15,6 +15,8 @@ This repository is a fork of the repository [scalingo/matomo](https://github.com
 
 `1024pix/matomo` repository adds to `scalingo/matomo` repository the ability to manage **[purchased plugins](https://shop.matomo.org/my-account/downloads/)**.
 
+It also adds the Heroku-forked buildpack "[heroku-buildpack-git-submodule](https://github.com/1024pix/heroku-buildpack-git-submodule)".
+
 ### Configuration
 
 First, add the environment variable `MATOMO_PLUGINS_API_LICENSE_KEY` with your Matomo account license key. 
@@ -29,6 +31,9 @@ purchased_plugins=(
   "MultiChannelConversionAttribution:3.0.7"
 )
 ```
+
+Finally, in your Scalingo app, set the variables `GIT_REPO_URL` (required) and `GIT_SSH_KEY` (optional).
+
 
 ### Matomo and plugins upgrade
 
